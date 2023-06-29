@@ -3573,7 +3573,7 @@
     mime "3.0.0"
     tiny-invariant "^1.2.0"
 
-"@thirdweb-dev/react@^3.9.0":
+"@thirdweb-dev/react@^3.14.6":
   version "3.14.6"
   resolved "https://registry.npmjs.org/@thirdweb-dev/react/-/react-3.14.6.tgz"
   integrity sha512-puY6IP0pusvr55BPqxS8gm0hWs3GMi/Cv/eP591MzbNHAlYrcOP6rGkZNH/Ta67HvMUbcFinC9/0v0wOSdBHPA==
@@ -3600,7 +3600,7 @@
     react-qr-code "^2.0.11"
     tiny-invariant "^1.2.0"
 
-"@thirdweb-dev/sdk@^3.10.26", "@thirdweb-dev/sdk@^3.9.0", "@thirdweb-dev/sdk@3.10.26":
+"@thirdweb-dev/sdk@^3.10.26", "@thirdweb-dev/sdk@3.10.26":
   version "3.10.26"
   resolved "https://registry.npmjs.org/@thirdweb-dev/sdk/-/sdk-3.10.26.tgz"
   integrity sha512-IAMBVQN07FqKPG9g1wWs2zG8wZVr7V8wDVUbtq6sJMIzz/KZB/tYFbWSRCmByw3liA5S+XPKAQWcwFoNJefyDA==
@@ -7537,7 +7537,7 @@ ethereumjs-util@^7.1.5:
     ethereum-cryptography "^0.1.3"
     rlp "^2.2.4"
 
-ethers@^5, ethers@^5.6.8, ethers@^5.7.0, ethers@^5.7.1, ethers@^5.7.2, ethers@>=5.5.1, ethers@5.7.2:
+ethers@^5, ethers@^5.7.0, ethers@^5.7.1, ethers@^5.7.2, ethers@>=5.5.1, ethers@5.7.2:
   version "5.7.2"
   resolved "https://registry.npmjs.org/ethers/-/ethers-5.7.2.tgz"
   integrity sha512-wswUsmWo1aOK8rR7DIKiWSw9DbLWe6x98Jrn8wcTflTVvaXhAMaB5zGAXy0GYQEQp9iO1iSHWVyARQm11zUtyg==
