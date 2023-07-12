@@ -14,6 +14,7 @@ module.exports = {
         "brand-yellow": "var(--clr-yellow)",
         "brand-blue": "var(--clr-blue)",
         "brand-green": "var(--clr-green)",
+        "brand-background": "var(--clr-background)",
       }
     },
   },
