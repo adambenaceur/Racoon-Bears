@@ -1,22 +1,21 @@
 import React from 'react';
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 
 const Home = () => {
   return (
     <div style={styles.header}>
-        <h1 style={styles.headerText}> Hi next.js </h1>
+      <h1 style={styles.headerText}> Hi next.js </h1>
     </div>
   );
-}
+};
 
 const styles = StyleSheet.create({
   header: {
-    backgroundColor: 'white',
+    backgroundColor: 'white'
   },
   headerText: {
-    fontFamily: 'Coiny',
-  },
+    fontFamily: 'Coiny'
+  }
 });
-
 
 export default Home;
