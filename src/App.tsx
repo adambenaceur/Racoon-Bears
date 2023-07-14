@@ -4,14 +4,17 @@ import {StyleSheet} from 'react-native';
 const Home = () => {
   return (
     <div style={styles.header}>
-        HI
+        <h1 style={styles.headerText}> Hi next.js </h1>
     </div>
   );
 }
 
 const styles = StyleSheet.create({
   header: {
-    backgroundColor: 'black',
+    backgroundColor: 'white',
+  },
+  headerText: {
+    fontFamily: 'Coiny',
   },
 });
 
