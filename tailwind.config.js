@@ -2,7 +2,7 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       fontFamily: {
@@ -14,6 +14,7 @@ module.exports = {
         "brand-yellow": "var(--clr-yellow)",
         "brand-blue": "var(--clr-blue)",
         "brand-green": "var(--clr-green)",
+        "brand-light": "var(--clr-white)",
         "brand-background": "var(--clr-background)",
       }
     },
