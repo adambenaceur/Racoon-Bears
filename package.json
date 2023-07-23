@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/runtime": "^7.22.6",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
     "@testing-library/user-event": "^14.2.0",
@@ -11,6 +12,7 @@
     "@thirdweb-dev/react": "^3.14.6",
     "@thirdweb-dev/sdk": "^3.10.26",
     "ethers": "^5.7.2",
+    "next": "^13.4.12",
     "react": "^18.2",
     "react-dom": "^18.2",
     "react-native": "^0.72.3",
