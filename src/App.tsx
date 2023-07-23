@@ -1,21 +1,19 @@
-import React from 'react';
-import { StyleSheet } from 'react-native';
-
 const Home = () => {
   return (
-    <div style={styles.header}>
-      <h1 style={styles.headerText}> Hi next.js </h1>
+    <div className="min-h-screen h-full w-full flex flex-col bg-brand-light overflow-hidden">
+      <header className="min-w-full text-gray-800 py-14 px-4 md:px-0">
+        <div className="flex items-center container mx-auto max-w-5xl justify-between h-full">
+          
+            <a className="font-coiny text-xl md:text-3xl font-bold">
+              <span className="bg-gradient-to-br from-brand-blue to-brand-purple pr-2 bg-clip-text text-transparent">
+                Racoon Bears
+              </span>
+            </a>
+          
+        </div>
+      </header>
     </div>
   );
 };
-
-const styles = StyleSheet.create({
-  header: {
-    backgroundColor: 'white'
-  },
-  headerText: {
-    fontFamily: 'Coiny'
-  }
-});
 
 export default Home;
