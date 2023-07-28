@@ -69,6 +69,9 @@ const Home = () => {
             </nav>
         </div>
       </header>
+       <div className=" h-full w-full container max-w-5xl mx-auto flex flex-col items-center pt-4"> {/* about */}
+
+      </div>
     </div>
   );
 };
