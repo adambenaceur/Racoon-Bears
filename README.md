@@ -6,3 +6,4 @@ Tech Stack
 * Typescript
 * Hardhat
 * IPFS
+* Thirdweb
