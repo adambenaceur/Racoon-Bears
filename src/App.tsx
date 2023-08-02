@@ -71,7 +71,7 @@ const Home = () => {
       </header>
        <div className=" h-full w-full container max-w-5xl mx-auto flex flex-col items-center pt-4"> {/* about */}
         <div> {/* about */}
-          About Racoon Bears
+          <h1>About Racoon Bears</h1>
         </div>
       </div>
     </div>
