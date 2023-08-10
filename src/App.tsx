@@ -1,3 +1,5 @@
+import logo from './images/RacoonBearPreview.png';
+
 const Home = () => {
   return (
     <div className="min-h-screen h-full w-full flex flex-col bg-brand-light overflow-hidden">
@@ -70,8 +72,8 @@ const Home = () => {
         </div>
       </header>
        <div className=" h-full w-full container max-w-5xl mx-auto flex flex-col items-center pt-4"> {/* about */}
-        <div className="mt-16 font-coiny uppercase inline-flex items-center rounded text-rose-500 hover:bg-rose-800 "> {/* about */}
-        <a className="mt-16 font-coiny uppercase inline-flex items-center px-6 py-2 text-sm sm:text-2xl md:text-3xl font-medium text-center rounded text-rose-500 hover:bg-rose-600 hover:text-white">
+          <div className="mt-16 font-coiny uppercase inline-flex items-center rounded text-rose-500 hover:bg-rose-800 "> {/* about */}
+            <a className="mt-16 font-coiny uppercase inline-flex items-center px-6 py-2 text-sm sm:text-2xl md:text-3xl font-medium text-center rounded text-rose-500 hover:bg-rose-600 hover:text-white">
               Go to minting page
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -89,11 +91,31 @@ const Home = () => {
               </svg>
             </a>
           
-          <div className="flex flex-col md:items-start items-center justify-center text-center font-coiny text-gray-800 px-4 md:px-0 py-10">
-            <h2 className="font-bold text-2xl md:text-4xl uppercase">
-              About Racoon Bears
-            </h2>
+          
+          <div className="flex flex-col md:flex-row md:space-x-16 space-y-10 items-center mt-20 w-full">
+            {/* RacoonBears Image */}
+            <img
+              src={logo}
+              className="w-64 h-64 rounded-md object-cover"
+            />
+
+            <div className="flex flex-col md:items-start items-center justify-center text-center font-coiny text-gray-800 px-4 md:px-0 py-10 mt-14">
+              <h2 className="font-bold text-2xl md:text-4xl uppercase">
+                About RacoonBears
+              </h2>
+
+              <p className="mt-6 text-lg">
+                RacoonBears are a collection of 100 burning hot NFTs living in
+                the core of the blockchain. Each individual RacoonBears is
+                carefully curated with 5 unique traits, along with some
+                incredibly rare 1/1s that have traits that can't be found from
+                any other NFT. Our vision is to create an amazing project
+                that will shed light, joy, love, and creativity! Burn on,
+                RacoonBears!
+              </p>
+            </div>
           </div>
+
         </div>
       </div>
     </div>
