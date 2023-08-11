@@ -91,18 +91,17 @@ const Home = () => {
               </svg>
             </a>
           
-          <div className="flex flex-col md:flex-row md:space-x-16 space-y-10 items-center mt-20 w-full">
+          <div className="flex flex-col items-center justify-center md:flex-row md:space-x-16 space-y-10 mt-20 w-full">
             {/* RacoonBears Image */}
             <img
               src={logo}
               className="w-64 h-64 rounded-md object-cover"
             />
-
+          </div>
             <div className="flex flex-col md:items-start items-center justify-center text-center font-coiny text-gray-800 px-4 md:px-0 py-10 mt-14">
-              <h2 className="font-bold text-2xl md:text-4xl uppercase">
+              <h2 className="font-bold text-2xl md:text-4xl uppercase text-center">
                 About RacoonBears
               </h2>
-
               <p className="mt-6 text-lg">
                 RacoonBears are a collection of 100 burning hot NFTs living in
                 the core of the blockchain. Each individual RacoonBears is
@@ -114,10 +113,9 @@ const Home = () => {
               </p>
             </div>
           </div>
-
+          
         </div>
       </div>
-    </div>
   );
 };
 
