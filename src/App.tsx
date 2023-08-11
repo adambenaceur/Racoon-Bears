@@ -72,7 +72,7 @@ const Home = () => {
         </div>
       </header>
        <div className=" h-full w-full container max-w-5xl mx-auto items-center pt-4"> 
-          <div className="mt-16 font-coiny uppercase items-center rounded"> {/* about */}
+          <div className="flex flex-col  mt-16 font-coiny uppercase items-center justify-center rounded"> {/* about */}
             <a className="mt-16 font-coiny uppercase inline-flex items-center px-6 py-2 text-sm sm:text-2xl md:text-3xl font-medium text-center rounded text-rose-500 hover:bg-rose-600 hover:text-white">
               Go to minting page
               <svg
