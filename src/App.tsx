@@ -3,6 +3,7 @@ import logo from './images/RacoonBearPreview.png';
 const Home = () => {
   return (
     <div className="min-h-screen h-full w-full flex flex-col bg-brand-light overflow-hidden">
+      {/* Header Tag */}
       <header className="min-w-full text-gray-800 py-14 px-4 md:px-0">
         <div className="flex items-center container mx-auto max-w-5xl justify-between h-full">
           
@@ -99,7 +100,7 @@ const Home = () => {
             />
           </div>
             <div className="flex flex-col md:items-start items-center justify-center text-center font-coiny text-gray-800 px-4 md:px-0 py-10 mt-14">
-              <h2 className="font-bold text-2xl md:text-4xl uppercase text-center">
+              <h2 className="flex flex-col text-center font-bold text-2xl items-center justify-center md:text-4xl uppercase text-center">
                 About RacoonBears
               </h2>
               <p className="mt-6 text-lg">
