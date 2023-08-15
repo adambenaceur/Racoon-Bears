@@ -1,4 +1,5 @@
 import logo from './images/RacoonBearPreview.png';
+import { link } from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -74,6 +75,7 @@ const Home = () => {
       </header>
        <div className=" h-full w-full container max-w-5xl mx-auto items-center pt-4"> 
           <div className="flex flex-col  mt-16 font-coiny uppercase items-center justify-center rounded"> {/* about */}
+          <link to={"./Dashboard"}>
             <a className="mt-16 font-coiny uppercase inline-flex items-center px-6 py-2 text-sm sm:text-2xl md:text-3xl font-medium text-center rounded text-rose-500 hover:bg-rose-600 hover:text-white">
               Go to minting page
               <svg
@@ -91,7 +93,7 @@ const Home = () => {
                 />
               </svg>
             </a>
-          
+          </link>
           <div className="flex flex-col items-center justify-center md:flex-row md:space-x-16 space-y-10 mt-20 w-full">
             {/* RacoonBears Image */}
             <img
