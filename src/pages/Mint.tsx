@@ -47,7 +47,7 @@ const Mint = () => {
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth={2}
-                        d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                        d="M18 12H6"
                       />
                     </svg>
                   </button>
@@ -66,7 +66,7 @@ const Mint = () => {
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth={2}
-                        d="M18 12H6"
+                        d="M12 6v6m0 0v6m0-6h6m-6 0H6"
                       />
                     </svg>
                   </button>
