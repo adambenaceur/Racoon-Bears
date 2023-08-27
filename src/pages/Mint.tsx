@@ -36,7 +36,7 @@ const Mint = () => {
               <div className="relative w-full">
                 <div className="font-coiny z-10 absolute top-2 left-2 opacity-80 filter backdrop-blur-lg text-base px-4 py-2 bg-black border border-brand-purple rounded-md flex items-center justify-center text-white font-semibold">
                   <p>
-                    <span>{count}</span> / 10000
+                    <span>{count}</span> / 100
                   </p>
                 </div>
                 <img
