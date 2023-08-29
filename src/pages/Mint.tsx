@@ -3,6 +3,13 @@ import { Link } from 'react-router-dom';
 import blur from '../images/blur.jpeg';
 import logo from '../images/RacoonBearPreview.png';
 
+import {
+  ThirdwebProvider,
+  ConnectWallet,
+  metamaskWallet,
+  coinbaseWallet,
+} from "@thirdweb-dev/react";
+
 const Mint = () => {
   const [count, setCount] = useState(1);
 
@@ -18,6 +25,17 @@ const Mint = () => {
 
   return (
     <div className="min-h-screen h-full w-full overflow-hidden flex flex-col items-center justify-center bg-brand-background">
+      
+      <ThirdwebProvider
+      activeChain="polygon"
+      clientId="YOUR_CLIENT_ID"
+      supportedWallets={[
+        metamaskWallet(),
+        coinbaseWallet(),
+      ]}
+    >
+      <ConnectWallet theme={"dark"} />
+    </ThirdwebProvider>
       <div className="relative w-full h-full flex flex-col items-center justify-center">
         <img
           src={blur}
