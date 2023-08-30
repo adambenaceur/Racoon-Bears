@@ -25,17 +25,17 @@ const Mint = () => {
 
   return (
     <div className="min-h-screen h-full w-full overflow-hidden flex flex-col items-center justify-center bg-brand-background">
-      
-      <ThirdwebProvider
-      activeChain="polygon"
-      clientId="YOUR_CLIENT_ID"
-      supportedWallets={[
-        metamaskWallet(),
-        coinbaseWallet(),
-      ]}
-    >
-      <ConnectWallet theme={"dark"} />
-    </ThirdwebProvider>
+      <div className="absolute top-4 right-4 z-50">
+        <ThirdwebProvider
+          activeChain="ethereum"
+          supportedWallets={[
+            metamaskWallet(),
+            coinbaseWallet(),
+          ]}
+        >
+          <ConnectWallet theme="dark" />
+        </ThirdwebProvider>
+      </div>
       <div className="relative w-full h-full flex flex-col items-center justify-center">
         <img
           src={blur}
