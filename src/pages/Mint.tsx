@@ -8,6 +8,7 @@ import {
   ConnectWallet,
   metamaskWallet,
   coinbaseWallet,
+  Web3Button, 
 } from "@thirdweb-dev/react";
 
 const Mint = () => {
@@ -26,15 +27,15 @@ const Mint = () => {
   return (
     <div className="min-h-screen h-full w-full overflow-hidden flex flex-col items-center justify-center bg-brand-background">
       <div className="absolute top-4 right-4 z-50">
-        <ThirdwebProvider
-          activeChain="ethereum"
+        {/* <ThirdwebProvider
+          activeChain={process.env.clientId}
           supportedWallets={[
             metamaskWallet(),
             coinbaseWallet(),
           ]}
         >
           <ConnectWallet theme="dark" />
-        </ThirdwebProvider>
+        </ThirdwebProvider> */}
       </div>
       <div className="relative w-full h-full flex flex-col items-center justify-center">
         <img
@@ -106,7 +107,18 @@ const Mint = () => {
                       />
                     </svg>
                   </button>
-                </div>
+                  </div>
+                  <div className="mt-20">
+            <Web3Button
+              contractAddress="0x750685ea3918804c736660DC7FdAe31ed8428E49"
+              action={(contract) => contract.erc721.claim(1)}
+              onSuccess={() => alert("Claimed NFT!")}
+              onError={(err) => alert(err)}
+            >
+              Claim NFT
+            </Web3Button>
+          </div>
+                
               </div>
             </div>
           </div>

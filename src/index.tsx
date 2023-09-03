@@ -6,23 +6,28 @@ import { ThirdwebProvider, useContract } from '@thirdweb-dev/react';
 import './styles/globals.css';
 
 
-import {
-    BrowserRouter,
-    Routes,
-    Route,
-    Link,
-  } from "react-router-dom";
+const clientIdConst = '72244ea3d83a9c9d5cbd6965e4627a79'
 
 // This is the chain your dApp will work on.
 // Change this to the chain your app is built for.
 // You can also import additional chains from `@thirdweb-dev/chains` and pass them directly.
+interface ThirdwebProviderProps {
+    activeChain : string;
+    clientId : string;
+}
+
 const activeChain = 'goerli';
 
 const container = document.getElementById('root');
 const root = createRoot(container!);
+const urlParams = new URL(window.location.toString()).searchParams;
+
+const clientId = urlParams.get("clientId") || clientIdConst || "";
+
+
 root.render(
     <React.StrictMode>
-        <ThirdwebProvider activeChain={activeChain}>
+        <ThirdwebProvider activeChain={activeChain} clientId={clientId}>
             <App/>
         </ThirdwebProvider>
     </React.StrictMode>
